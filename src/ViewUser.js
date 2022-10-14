@@ -1,9 +1,12 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 function ViewUser() {
+  const params = useParams()
   return (
     <div className="container">
       <div className="row">
+        <h1>Id :{params.id}</h1>
         <div className="col-lg-6">Usernmae:person1</div>
         <div className="col-lg-6">Email:person1</div>
         <div className="col-lg-6">Country:person1</div>

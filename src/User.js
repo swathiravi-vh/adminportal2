@@ -58,7 +58,7 @@ function User() {
             >
               <thead>
                 <tr>
-                <th>Id</th>
+                  <th>Id</th>
                   <th>Name</th>
                   <th>Email</th>
                   <th>Country</th>
@@ -72,7 +72,7 @@ function User() {
               </thead>
               <tfoot>
                 <tr>
-                <th>Id</th>
+                  <th>Id</th>
                   <th>Name</th>
                   <th>Email</th>
                   <th>Country</th>
@@ -87,7 +87,7 @@ function User() {
               <tbody>
                 {users.map((user) =>{
                     return <tr>
-                        <td>{user.id}</td>
+                    <td>{user.id}</td>
                     <td>{user.username}</td>
                     <td>{user.email}</td>
                     <td>{user.country}</td>
@@ -98,7 +98,10 @@ function User() {
                     <td>{user.gender}</td>
                     <td>
                       <Link to={`/user/${user.id}`} className="btn btn-warning">View</Link>
+                      <Link to={`/user/${user.id}`} className="btn btn-primary">Edit</Link>
+                      <Link to={`/user/${user.id}`} className="btn btn-danger">Delete</Link>
                     </td>
+                    
                   </tr>
                 })
 
