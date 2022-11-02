@@ -24,7 +24,7 @@ function App() {
               <Route path="/users" element={<User/>}></Route>
               <Route path="/user_create" element={<Usercreate/>}></Route>
               <Route path="/user/:id" element={<ViewUser/>}></Route>
-              <Route path="/user/:id" element={<Edit/>}></Route>
+              <Route path="/edit/:id" element={<Edit/>}></Route>
               <Route path="/user/:id" element={<Delete/>}></Route>
               
             </Routes>
